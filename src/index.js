@@ -1,11 +1,12 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import "./index.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import ParticleBackground from "./components/ParticleBackground";
 import Greeting from "./components/Greeting";
+import ProjectsPage from "./components/ProjectsPage";
 
 const container = {
   position: "absolute",
@@ -20,9 +21,17 @@ const App = () => {
     <div className="font-mono" style={container}>
       <ParticleBackground />
       <div style={container}>
-        <NavBar />
         <Router>
-          <Greeting />
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <Greeting />
+            </Route>
+
+            <Route exact path="/projects">
+              <ProjectsPage />
+            </Route>
+          </Switch>
         </Router>
       </div>
     </div>

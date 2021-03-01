@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import MainButton from "./MainButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Greeting(props) {
   return (
@@ -15,9 +16,11 @@ function Greeting(props) {
         </h1>
       </div>
       <div className="p-4 m-auto">
-        <MainButton>
-          View my work <FontAwesomeIcon icon={faAngleDoubleRight} />
-        </MainButton>
+        <Link to="/projects">
+          <MainButton>
+            View my work <FontAwesomeIcon icon={faAngleDoubleRight} />
+          </MainButton>
+        </Link>
       </div>
     </div>
   );

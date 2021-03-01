@@ -5,6 +5,7 @@ class ParticleBackground extends Component {
   render() {
     return (
       <Particles
+        height={window.outerHeight}
         id="tsparticles"
         options={{
           background: {
