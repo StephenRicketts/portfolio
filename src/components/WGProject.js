@@ -6,6 +6,7 @@ import {
   faAngleDoubleDown,
   faAngleDoubleUp,
 } from "@fortawesome/free-solid-svg-icons";
+import TourSwiper from "./TourSwiper";
 
 export default function WGProject() {
   const [showScreenShots, setShowScreenShots] = useState(false);
@@ -52,7 +53,7 @@ export default function WGProject() {
           Take the Screenshot Tour <FontAwesomeIcon icon={buttonIcon} />
         </MainButton>
       </div>
-      {showScreenShots && <WGScreenshots />}
+      <TourSwiper />
     </div>
   );
 }

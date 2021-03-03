@@ -61,7 +61,7 @@ export default function WGScreenshots() {
       <img
         className="w-3/5 h-100 mx-auto"
         src="images/WGprofile.png"
-        alt="writer's guild write page"
+        alt="writer's guild profile page"
       />
     </div>
   );
