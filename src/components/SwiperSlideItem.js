@@ -5,7 +5,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 export default function SwiperSlideItem(props) {
   return (
     <div>
-      <figcaption className="text-green-200 text-center">
+      <figcaption className="p-6 text-green-200 text-center">
         {props.caption}
         <FontAwesomeIcon icon={faAngleDown} />
       </figcaption>

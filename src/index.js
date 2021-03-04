@@ -7,6 +7,8 @@ import NavBar from "./components/NavBar";
 import Container from "./components/Container";
 import Greeting from "./components/Greeting";
 import ProjectsPage from "./components/ProjectsPage";
+import WGInfo from "./components/WGProject/WGInfo";
+import CDInfo from "./components/CDProject/CDInfo";
 
 const App = () => {
   return (
@@ -17,9 +19,14 @@ const App = () => {
           <Route exact path="/">
             <Greeting />
           </Route>
-
           <Route exact path="/projects">
             <ProjectsPage />
+          </Route>
+          <Route exact path="/projects/wg">
+            <WGInfo />
+          </Route>
+          <Route exact path="/projects/cd">
+            <CDInfo />
           </Route>
         </Switch>
       </Router>

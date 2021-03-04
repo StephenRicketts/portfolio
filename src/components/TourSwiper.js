@@ -25,50 +25,52 @@ const altObj = {
 
 const TourSwiper = () => {
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        \
-        <SwiperSlideItem
-          caption={captionObj.landing}
-          alt={altObj.landing}
-          imgSrc="images/WGlanding.png"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SwiperSlideItem
-          caption={captionObj.stacks}
-          alt={altObj.stacks}
-          imgSrc="images/WGstacks.png"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SwiperSlideItem
-          caption={captionObj.read}
-          alt={altObj.read}
-          imgSrc="images/WGread.png"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SwiperSlideItem
-          catpion={captionObj.write}
-          alt={altObj.write}
-          imgSrc="images/WGwrite.png"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SwiperSlideItem
-          catpion={captionObj.profile}
-          alt={altObj.profile}
-          imgSrc="images/WGprofile.png"
-        />
-      </SwiperSlide>
-      ...
-    </Swiper>
+    <div className="h-4/5 w-4/5 mx-auto my-20 bg-gray-900 border-green-200 border-2 text-green-200">
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          \
+          <SwiperSlideItem
+            caption={captionObj.landing}
+            alt={altObj.landing}
+            imgSrc="../images/WGlanding.png"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SwiperSlideItem
+            caption={captionObj.stacks}
+            alt={altObj.stacks}
+            imgSrc="../images/WGstacks.png"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SwiperSlideItem
+            caption={captionObj.read}
+            alt={altObj.read}
+            imgSrc="../images/WGread.png"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SwiperSlideItem
+            catpion={captionObj.write}
+            alt={altObj.write}
+            imgSrc="../images/WGwrite.png"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SwiperSlideItem
+            catpion={captionObj.profile}
+            alt={altObj.profile}
+            imgSrc="../images/WGprofile.png"
+          />
+        </SwiperSlide>
+        ...
+      </Swiper>
+    </div>
   );
 };
 

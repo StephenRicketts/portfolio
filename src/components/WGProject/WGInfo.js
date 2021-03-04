@@ -1,20 +1,8 @@
-import React, { useState } from "react";
-import MainButton from "./MainButton";
-import WGScreenshots from "./WGScreenshots";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDoubleDown,
-  faAngleDoubleUp,
-} from "@fortawesome/free-solid-svg-icons";
-import TourSwiper from "./TourSwiper";
+import React from "react";
 
-export default function WGProject() {
-  const [showScreenShots, setShowScreenShots] = useState(false);
-
-  var buttonIcon = showScreenShots ? faAngleDoubleUp : faAngleDoubleDown;
-
+export default function WGInfo() {
   return (
-    <div className="h-4/5 w-4/5 mx-auto my-20 bg-gray-900 border-green-200 border-2 text-green-200">
+    <div>
       <h1 className="pt-4 text-center text-indigo-400 text-3xl">
         Writer's Guild
       </h1>
@@ -45,15 +33,6 @@ export default function WGProject() {
           <u className="text-blue-600">here.</u>
         </a>
       </h2>
-      <div className="pb-6 pt-4 text-center">
-        <MainButton
-          onClick={() => setShowScreenShots(!showScreenShots)}
-          className="m-auto"
-        >
-          Take the Screenshot Tour <FontAwesomeIcon icon={buttonIcon} />
-        </MainButton>
-      </div>
-      <TourSwiper />
     </div>
   );
 }
