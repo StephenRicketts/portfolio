@@ -9,7 +9,7 @@ const container = {
   height: "100%",
 };
 
-export default function Container(props) {
+export default function ParticleContainer(props) {
   return (
     <div className="font-mono" style={container}>
       <ParticleBackground />

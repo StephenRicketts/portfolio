@@ -18,12 +18,10 @@ class ParticleBackground extends Component {
             detectsOn: "window",
             events: {
               onClick: {
-                enable: true,
-                mode: "push",
+                enable: false,
               },
               onHover: {
                 enable: false,
-                mode: "repulse",
               },
               resize: true,
             },
@@ -33,13 +31,6 @@ class ParticleBackground extends Component {
                 duration: 2,
                 opacity: 0.8,
                 size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
               },
             },
           },
@@ -52,9 +43,9 @@ class ParticleBackground extends Component {
               enable: true,
             },
             move: {
-              direction: "top",
+              direction: "left",
               enable: true,
-              outMode: "bounce",
+              outMode: "out",
               random: false,
               speed: 2,
               straight: false,

@@ -1,23 +1,22 @@
 import ReactDOM from "react-dom";
-import React from "react";
+import React, { Fragment } from "react";
 import "./index.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
-import Container from "./components/Container";
-import Greeting from "./components/Greeting";
+import MainPage from "./components/MainPage";
 import ProjectsPage from "./components/ProjectsPage";
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDInfo";
 
 const App = () => {
   return (
-    <Container>
+    <Fragment>
+      <NavBar />
       <Router>
-        <NavBar />
         <Switch>
           <Route exact path="/">
-            <Greeting />
+            <MainPage />
           </Route>
           <Route exact path="/projects">
             <ProjectsPage />
@@ -30,7 +29,7 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
-    </Container>
+    </Fragment>
   );
 };
 
