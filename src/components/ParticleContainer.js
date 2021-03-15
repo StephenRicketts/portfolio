@@ -7,13 +7,13 @@ const container = {
   left: 0,
   width: "100%",
   height: "100%",
+  zIndex: "-1",
 };
 
 export default function ParticleContainer(props) {
   return (
     <div className="font-mono" style={container}>
       <ParticleBackground />
-      <div style={container}>{props.children}</div>
     </div>
   );
 }

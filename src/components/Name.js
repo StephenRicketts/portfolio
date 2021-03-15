@@ -3,15 +3,18 @@ import React from "react";
 export default function Name() {
   return (
     <div
-      style={{ borderBottomLeftRadius: "50%", borderBottomRightRadius: "50%" }}
-      className="bg-gray-700 p-14 w-full h-1/6 text-center"
+      style={{
+        borderBottomLeftRadius: "50%",
+        borderBottomRightRadius: "50%",
+      }}
+      className="bg-gray-700 p-6 w-full h-1/6 text-center z-10"
     >
-      <p className="text-gray-200 text-5xl tracking-widest font-light">
-        STEPHEN RICKETTS
+      <p className="text-green-200 text-5xl tracking-widest">
+        Stephen Ricketts
       </p>
-      <h2 className="text-gray-200 my-10 text-2xl tracking-wide">
+      <p className="text-green-200 my-8 text-2xl tracking-wide">
         Full Stack Developer
-      </h2>
+      </p>
     </div>
   );
 }

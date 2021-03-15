@@ -8,6 +8,7 @@ import MainPage from "./components/MainPage";
 import ProjectsPage from "./components/ProjectsPage";
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDInfo";
+import ParticleContainer from "./components/ParticleContainer";
 
 const App = () => {
   return (
