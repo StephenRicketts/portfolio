@@ -5,22 +5,18 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import MainPage from "./components/MainPage";
-import ProjectsPage from "./components/ProjectsPage";
+
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDInfo";
-import ParticleContainer from "./components/ParticleContainer";
 
 const App = () => {
   return (
     <Fragment>
-      <NavBar />
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/">
             <MainPage />
-          </Route>
-          <Route exact path="/projects">
-            <ProjectsPage />
           </Route>
           <Route exact path="/projects/wg">
             <WGInfo />

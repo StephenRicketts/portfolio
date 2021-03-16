@@ -2,13 +2,14 @@ import React from "react";
 import Name from "./Name";
 import Projects from "./Projects";
 import ParticleContainer from "./ParticleContainer";
+import SkillsList from "./SkillsList";
 
 export default function MainPage() {
   return (
     <div className="font-mono pt-14">
       <ParticleContainer />
       <Name />
-      <div className="text-gray-200 pt-10">
+      <div className="text-gray-200 pt-20">
         <img
           className="h-36 m-auto cursor-pointer"
           src="/images/avatar.png"
@@ -22,6 +23,7 @@ export default function MainPage() {
         </p>
         <div className="py-36 text-center">
           <Projects />
+          <SkillsList />
         </div>
       </div>
     </div>

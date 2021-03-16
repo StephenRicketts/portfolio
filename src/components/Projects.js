@@ -5,7 +5,10 @@ import WGbutton from "./WGProject/WGbutton";
 export default function Projects() {
   return (
     <div>
-      <h1 className="text-grey-200 w-1/5 py-8 m-auto text-3xl border-gray-200 border-b-2">
+      <h1
+        id="portfolio"
+        className="text-grey-200 w-1/5 py-8 m-auto text-3xl border-gray-200 border-b-2"
+      >
         Recent Projects
       </h1>
       <div>
