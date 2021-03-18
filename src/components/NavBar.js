@@ -2,14 +2,20 @@ import React from "react";
 import NavButton from "./NavButton";
 import { HashLink } from "react-router-hash-link";
 function NavBar() {
-  const scrollWidthOffset = (el) => {
+  const portfolioScrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
+  const skillsScrollWidthOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = 40;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
-    <nav className="fixed w-full justify-center text-gray-200 bg-gray-800 content-center">
+    <nav className="fixed w-full justify-center z-10 text-gray-200 bg-gray-800 content-center">
       <ul className="flex flex-row justify-center">
         <li className="mx-1">
           <HashLink smooth to="/#top">
@@ -20,13 +26,17 @@ function NavBar() {
           <HashLink
             smooth
             to="/#portfolio"
-            scroll={(el) => scrollWidthOffset(el)}
+            scroll={(el) => portfolioScrollWidthOffset(el)}
           >
             <NavButton>Portfolio</NavButton>
           </HashLink>
         </li>
         <li className="mx-1">
-          <HashLink smooth to="/#skills">
+          <HashLink
+            smooth
+            to="/#skills"
+            scroll={(el) => skillsScrollWidthOffset(el)}
+          >
             <NavButton>Skills</NavButton>
           </HashLink>
         </li>
