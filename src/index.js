@@ -7,8 +7,7 @@ import NavBar from "./components/NavBar";
 import MainPage from "./components/MainPage";
 
 import WGInfo from "./components/WGProject/WGInfo";
-import CDInfo from "./components/CDProject/CDInfo";
-import CDInfoTwo from "./components/CDProject/CDinfoTwo";
+import CDInfo from "./components/CDProject/CDinfo";
 
 const App = () => {
   return (
@@ -23,7 +22,7 @@ const App = () => {
             <WGInfo />
           </Route>
           <Route exact path="/projects/cd">
-            <CDInfoTwo />
+            <CDInfo />
           </Route>
         </Switch>
       </Router>

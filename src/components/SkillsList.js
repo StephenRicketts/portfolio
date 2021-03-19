@@ -3,15 +3,15 @@ import SkillsListItem from "./SkillsListItem";
 
 export default function SkillsList() {
   return (
-    <div className="text-gray-200 w-2/5 m-auto">
+    <div className="text-gray-200 w-3/5 m-auto">
       <h1
         id="skills"
-        className="w-1/5 pt-32 pb-8 m-auto text-3xl border-gray-200 border-b-2"
+        className="md:w-1/5 pt-32 pb-8 mx-auto text-center text-3xl border-gray-200 border-b-2"
       >
         Skills
       </h1>
 
-      <div className="p-8 mt-8 grid grid-rows-6 grid-flow-col gap-4 bg-gray-700 border-green-300 border-2 rounded-lg">
+      <div className="p-8 mt-8 md:grid grid-rows-12 hidden md:grid-rows-6 grid-flow-col gap-4 bg-gray-700 border-green-300 border-2 rounded-lg">
         <SkillsListItem
           skillName="React/React Native"
           skillSvgPath="/images/skills-icons/react.svg"
@@ -61,7 +61,7 @@ export default function SkillsList() {
           skillSvgPath="/images/skills-icons/vue.svg"
         />
       </div>
-      <p className="pt-4">
+      <p className="pt-4 text-justify">
         Like any good developer I am constantly picking up new skills. Right now
         I am working on courses in AWS and nextJS.
       </p>

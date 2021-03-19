@@ -41,7 +41,9 @@ function NavBar() {
           </HashLink>
         </li>
         <li className="mx-1">
-          <NavButton>About</NavButton>
+          <HashLink smooth to="/#about">
+            <NavButton>About</NavButton>
+          </HashLink>
         </li>
       </ul>
     </nav>

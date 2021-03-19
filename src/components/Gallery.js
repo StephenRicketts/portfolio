@@ -30,8 +30,16 @@ const WGimages = [
 ];
 
 const CDimages = [
-  { original: "/images/CDbulma.png", description: "" },
-  { original: "/images/CDshow.png", description: "" },
+  {
+    original: "/images/CDshow.png",
+    description:
+      "The built-in 'show' function allows the javascript code to be displayed.",
+  },
+  {
+    original: "/images/CDbulma.png",
+    description:
+      "Outside libraries can be imported and used within the environent.",
+  },
 ];
 
 export default function Gallery(props) {
