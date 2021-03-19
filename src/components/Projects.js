@@ -16,7 +16,7 @@ export default function Projects() {
         <CDbutton />
       </div>
       <p>
-        An exaustive list of my projects can be found on my{" "}
+        An exhaustive list of my projects can be found on my{" "}
         <a
           className="text-green-400"
           href="https://github.com/StephenRicketts?tab=repositories"

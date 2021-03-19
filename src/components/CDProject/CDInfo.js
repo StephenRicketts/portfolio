@@ -7,13 +7,7 @@ export default function WGinfo() {
         Code Display
       </h1>
       <div className="pt-4 w-1/3 mx-auto">
-        <h2>
-          Technologies: <span className="text-yellow-400">React</span>,{" "}
-          <span className="text-purple-300">Bulma</span>,{" "}
-          <span className="text-red-400">ESBuild</span>,{" "}
-          <span className="text-red-400">Lerna</span>,{" "}
-          <span className="text-red-400">Commander</span>
-        </h2>
+        <h2>Technologies:</h2>
       </div>
       <p className="py-8 px-14 mx-auto">
         Code display is a command-line interface for a browser based interactive

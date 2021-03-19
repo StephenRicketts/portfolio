@@ -63,7 +63,7 @@ export default function SkillsList() {
       </div>
       <p className="pt-4">
         Like any good developer I am constantly picking up new skills. Right now
-        I am working courses in AWS and nextJS.
+        I am working on courses in AWS and nextJS.
       </p>
     </div>
   );

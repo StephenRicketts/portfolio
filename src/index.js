@@ -8,6 +8,7 @@ import MainPage from "./components/MainPage";
 
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDInfo";
+import CDInfoTwo from "./components/CDProject/CDinfoTwo";
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
             <WGInfo />
           </Route>
           <Route exact path="/projects/cd">
-            <CDInfo />
+            <CDInfoTwo />
           </Route>
         </Switch>
       </Router>
