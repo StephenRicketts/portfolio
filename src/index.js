@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import MainPage from "./components/MainPage";
+import Footer from "./components/Footer";
 
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDinfo";
@@ -25,6 +26,7 @@ const App = () => {
             <CDInfo />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </Fragment>
   );

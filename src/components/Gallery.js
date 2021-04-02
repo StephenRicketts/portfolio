@@ -38,7 +38,7 @@ const CDimages = [
   {
     original: "/images/CDbulma.png",
     description:
-      "Outside libraries can be imported and used within the environent.",
+      "Outside libraries can be imported and used within the environment. There is also a text editor that allows you to document the code you are writing.",
   },
 ];
 
