@@ -1,10 +1,12 @@
 import React from "react";
 import Gallery from "../Gallery";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function WGInfo() {
   return (
-    <div className="flex">
-      <div className="text-gray-200 px-4 py-12 w-1/3 m-auto bg-gray-700 border-green-300 border-2 rounded-lg">
+    <div className="flex flex-col lg:flex-row">
+      <div className=" mt-32 py-16 w-4/5 md:w-3/5 lg:w-1/3 m-auto text-gray-200 bg-gray-700 border-green-300 border-2 rounded-lg">
         <h1 className=" text-center text-indigo-400 text-3xl">
           Writer's Guild
         </h1>
@@ -37,8 +39,12 @@ export default function WGInfo() {
             <u className="text-blue-600">here.</u>
           </a>
         </h2>
+        <div className="text-center lg:hidden">
+          <p className="pb-4">Check out some screenshots below</p>
+          <FontAwesomeIcon icon={faAngleDoubleDown} />
+        </div>
       </div>
-      <div className="w-1/2 my-20 mx-auto">
+      <div className="w-full lg:w-1/2 my-20 mx-auto">
         <Gallery project="WG" />
       </div>
     </div>

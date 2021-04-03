@@ -3,7 +3,7 @@ import SkillsListItem from "./SkillsListItem";
 
 export default function SkillsList() {
   return (
-    <div className="text-gray-200 w-3/5 m-auto">
+    <div className="text-gray-200 w-4/5 md:w-3/5 m-auto">
       <h1
         id="skills"
         className="md:w-1/5 pt-32 pb-8 mx-auto text-center text-3xl border-gray-200 border-b-2"
@@ -11,7 +11,7 @@ export default function SkillsList() {
         Skills
       </h1>
 
-      <div className="p-8 mt-8 md:grid grid-rows-12 hidden md:grid-rows-6 grid-flow-col gap-4 bg-gray-700 border-green-300 border-2 rounded-lg">
+      <div className="p-8 mt-8 flex flex-col md:grid md:grid-rows-6 grid-flow-col gap-4 bg-gray-700 border-green-300 border-2 rounded-lg">
         <SkillsListItem
           skillName="React/React Native"
           skillSvgPath="/images/skills-icons/react.svg"
