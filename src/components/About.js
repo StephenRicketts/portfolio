@@ -5,19 +5,23 @@ export default function About() {
     <div className="px-8">
       <h1
         id="about"
-        className="w-3/5 md:w-1/5 pt-32 pb-8 m-auto text-3xl border-gray-200 border-b-2"
+        className="w-3/5 md:w-1/6 pt-32 pb-8 m-auto text-3xl border-gray-200 border-b-2"
       >
         About
       </h1>
       <p className="lg:w-1/3 text-justify pt-8 mx-auto ">
-        I currently live in Montréal, Quebec. In December 2019 I graduated from
-        the Decode web development bootcamp through Concordia university. Since
-        then, I have continued to improve my skills as a developer. I really
-        enjoy programming and my main goal is to become as good at it as I can.
+        I currently live and work in Montréal, Quebec. In December 2019 I
+        graduated from an intensive web development bootcamp through Concordia
+        university. I have since continued to improve my skills as a developer
+        through additional courses, personal projects, and freelancing. I feel
+        confident to say that I am getting pretty good! I find programming to be
+        very rewarding. When I finally figure out a tough bug or successfully
+        implement a cool feature to a website I will often make me clap my hands
+        and say "yessssss" 👏.
       </p>
       <p className="lg:w-1/3 text-justify pt-4 mx-auto ">
-        My background is unique among other developers. Prior to 2019 I had an
-        extensive career in social work and Education. I worked in high stress
+        My background is unique among most other developers. Prior to 2019 I
+        worked in social work and Education. I worked in high stress
         environments with a broad range of different people and always did my
         best to improve their lives in any way I could. Through this work I
         acquired patience and excellent people skills. In 5 or so years, once I

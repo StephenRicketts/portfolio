@@ -61,7 +61,7 @@ export default function SkillsList() {
           skillSvgPath="/images/skills-icons/vue.svg"
         />
       </div>
-      <p className="pt-4 text-justify">
+      <p className="pt-4  text-justify">
         Like any good developer I am constantly picking up new skills. Right now
         I am working on courses in AWS and nextJS.
       </p>

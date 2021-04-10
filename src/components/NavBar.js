@@ -1,6 +1,7 @@
 import React from "react";
 import NavButton from "./NavButton";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 function NavBar() {
   const portfolioScrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -44,6 +45,11 @@ function NavBar() {
           <HashLink smooth to="/#about">
             <NavButton>About</NavButton>
           </HashLink>
+        </li>
+        <li className="mx-1">
+          <Link to="/resume">
+            <NavButton>Resume</NavButton>
+          </Link>
         </li>
       </ul>
     </nav>
