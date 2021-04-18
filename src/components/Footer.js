@@ -17,8 +17,9 @@ export default function Footer() {
         >
           {email}
         </a>
+        <p className="py-6">514-233-4793</p>
       </div>
-      <div className="flex py-12 justify-center">
+      <div className="flex py-4 justify-center">
         <a href="https://github.com/StephenRicketts">
           <img
             className="mr-10"

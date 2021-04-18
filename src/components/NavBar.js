@@ -5,13 +5,19 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const portfolioScrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
+    const yOffset = -180;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
   const skillsScrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = 40;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
+  const aboutScrollWidthOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = 35;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
@@ -42,11 +48,15 @@ function NavBar() {
           </HashLink>
         </li>
         <li className="mx-1">
-          <HashLink smooth to="/#about">
+          <HashLink
+            scroll={(el) => aboutScrollWidthOffset(el)}
+            smooth
+            to="/#about"
+          >
             <NavButton>About</NavButton>
           </HashLink>
         </li>
-        <li className="mx-1">
+        <li className="mx-1 ">
           <Link to="/resume">
             <NavButton>Resume</NavButton>
           </Link>

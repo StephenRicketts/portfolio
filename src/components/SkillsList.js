@@ -11,7 +11,7 @@ export default function SkillsList() {
         Skills
       </h1>
 
-      <div className="p-8 mt-8 flex flex-col md:grid md:grid-rows-6 grid-flow-col gap-4 bg-gray-700 border-green-300 border-2 rounded-lg">
+      <div className="p-8 mt-8 flex flex-col md:grid md:grid-rows-6 grid-flow-col gap-4 bg-gray-700 items-center border-green-300 border-2 rounded-lg">
         <SkillsListItem
           skillName="React/React Native"
           skillSvgPath="/images/skills-icons/react.svg"

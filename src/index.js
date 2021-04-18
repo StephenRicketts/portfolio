@@ -9,27 +9,30 @@ import Footer from "./components/Footer";
 import WGInfo from "./components/WGProject/WGInfo";
 import CDInfo from "./components/CDProject/CDinfo";
 import ResumePage from "./components/ResumePage";
+import ScrollToTop from "./components/wrappers/ScrollToTop";
 
 const App = () => {
   return (
     <Fragment>
       <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <MainPage />
-          </Route>
-          <Route exact path="/projects/wg">
-            <WGInfo />
-          </Route>
-          <Route exact path="/projects/cd">
-            <CDInfo />
-          </Route>
-          <Route exact path="/resume">
-            <ResumePage />
-          </Route>
-        </Switch>
-        <Footer />
+        <ScrollToTop>
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <MainPage />
+            </Route>
+            <Route exact path="/projects/wg">
+              <WGInfo />
+            </Route>
+            <Route exact path="/projects/cd">
+              <CDInfo />
+            </Route>
+            <Route exact path="/resume">
+              <ResumePage />
+            </Route>
+          </Switch>
+          <Footer />
+        </ScrollToTop>
       </Router>
     </Fragment>
   );
