@@ -11,12 +11,11 @@ export default function ResumePage() {
       <h1 className="pt-14 pb-2 text-2xl">
         Stephen Ricketts, Full Stack Developer
       </h1>
-      <div className="flex mx-auto ">
-        <div className="flex mx-auto space-x-6">
-          <h2 className="pb-8 text-xl text-green-300">
-            stephen.ricketts12@gmail.com
+      <div className="flex mx-auto">
+        <div className="flex mx-auto">
+          <h2 className=" text-xl text-green-300">
+            stephen.ricketts12@gmail.com | 514-233-4794
           </h2>
-          <h2 className="pb-8 text-xl text-green-300">514-233-4794</h2>
         </div>
       </div>
       <h1 className="my-12 mx-auto py-2 w-3/5 md:w-1/5 text-5xl font-thin">
