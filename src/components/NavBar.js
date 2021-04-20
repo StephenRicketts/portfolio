@@ -25,14 +25,14 @@ function NavBar() {
     <nav className="fixed w-full justify-center z-10 text-gray-200 bg-gray-800 content-center">
       <ul className="flex flex-row justify-center">
         <li className="mx-1">
-          <HashLink smooth to="/#top">
+          <HashLink smooth to="/portfolio/#top">
             <NavButton>Home</NavButton>
           </HashLink>
         </li>
         <li className="mx-1">
           <HashLink
             smooth
-            to="/#portfolio"
+            to="/portfolio/#portfolio"
             scroll={(el) => portfolioScrollWidthOffset(el)}
           >
             <NavButton>Portfolio</NavButton>
@@ -41,7 +41,7 @@ function NavBar() {
         <li className="mx-1">
           <HashLink
             smooth
-            to="/#skills"
+            to="/portfolio/#skills"
             scroll={(el) => skillsScrollWidthOffset(el)}
           >
             <NavButton>Skills</NavButton>
@@ -51,7 +51,7 @@ function NavBar() {
           <HashLink
             scroll={(el) => aboutScrollWidthOffset(el)}
             smooth
-            to="/#about"
+            to="/portfolio/#about"
           >
             <NavButton>About</NavButton>
           </HashLink>

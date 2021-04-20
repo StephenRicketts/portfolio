@@ -5,7 +5,7 @@ const FadeInAnimation = ({
   children,
   wrapperElement = "div",
   direction = null,
-  delay = 0.5,
+  delay = 1,
   ...props
 }) => {
   const Component = wrapperElement;

@@ -1,4 +1,6 @@
 import React from "react";
+import github from "../images/social-media-icons/github.svg";
+import linkedIn from "../images/social-media-icons/linkedIn.svg";
 
 export default function Footer() {
   const email = "stephen.ricketts12@gmail.com";
@@ -21,18 +23,10 @@ export default function Footer() {
       </div>
       <div className="flex py-4 justify-center">
         <a href="https://github.com/StephenRicketts">
-          <img
-            className="mr-10"
-            src="/images/social-media-icons/github.svg"
-            alt="github"
-          />
+          <img className="mr-10" src={github} alt="github" />
         </a>
         <a href="https://www.linkedin.com/in/stephenricketts5/">
-          <img
-            className=""
-            src="/images/social-media-icons/linkedIn.svg"
-            alt="linkedIn"
-          />
+          <img className="" src={linkedIn} alt="linkedIn" />
         </a>
       </div>
       <div className="text-center">

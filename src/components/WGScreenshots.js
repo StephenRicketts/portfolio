@@ -13,7 +13,7 @@ export default function WGScreenshots() {
       </figcaption>
       <img
         className="w-3/5 h-100 mx-auto"
-        src="images/WGlanding.png"
+        src=" ../images/WGlanding.png"
         alt="writer's guild landing page"
       />
       <figcaption className="text-green-200 text-center">
@@ -25,7 +25,7 @@ export default function WGScreenshots() {
       </figcaption>
       <img
         className="w-3/5 h-100 mx-auto"
-        src="images/WGstacks.png"
+        src="../images/WGstacks.png"
         alt="writer's guild stacks page"
       />
       <figcaption className="text-green-200 text-center">
@@ -37,7 +37,7 @@ export default function WGScreenshots() {
       </figcaption>
       <img
         className="w-3/5 h-100 mx-auto"
-        src="images/WGread.png"
+        src="../images/WGread.png"
         alt="writer's guild read page"
       />
       <figcaption className="text-green-200 text-center">
@@ -47,7 +47,7 @@ export default function WGScreenshots() {
       </figcaption>
       <img
         className="w-3/5 h-100 mx-auto"
-        src="images/WGwrite.png"
+        src="./images/WGwrite.png"
         alt="writer's guild write page"
       />
       <figcaption className="text-green-200 text-center">
@@ -60,7 +60,7 @@ export default function WGScreenshots() {
       </figcaption>
       <img
         className="w-3/5 h-100 mx-auto"
-        src="images/WGprofile.png"
+        src="./images/WGprofile.png"
         alt="writer's guild profile page"
       />
     </div>

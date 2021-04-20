@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 
 import FadeInAnimation from "./animations/FadeIn";
+import diploma from "../images/diploma.jpg";
 
 export default function ResumePage() {
   const [diplomaToggle, setDiplomaToggle] = useState(false);
 
   return (
     <div className="mx-10  text-center  text-gray-300">
-      <h1 className="pt-14 pb-2 text-2xl">Stephen Ricketts</h1>
+      <h1 className="pt-14 pb-2 text-2xl">
+        Stephen Ricketts, Full Stack Developer
+      </h1>
       <div className="flex mx-auto ">
-        <div className=" mx-auto space-x-6">
-          <h2 className="pb-8 text-xl text-green-300">Full Stack Developer</h2>
-          <h2 className="pb-2">stephen.ricketts12@gmail.com</h2>
-          <h2>514-233-4794</h2>
+        <div className="flex mx-auto space-x-6">
+          <h2 className="pb-8 text-xl text-green-300">
+            stephen.ricketts12@gmail.com
+          </h2>
+          <h2 className="pb-8 text-xl text-green-300">514-233-4794</h2>
         </div>
       </div>
       <h1 className="my-12 mx-auto py-2 w-3/5 md:w-1/5 text-5xl font-thin">
@@ -28,8 +32,8 @@ export default function ResumePage() {
           I am currently working a 2 month contract for a small start-up called
           SeonVision. This project entails building a website and hooking it up
           to a React admin panel template and then doing the necessary
-          customizations to the template. I am using React, tailwindCSS for
-          styling, and for the back end we are using Firebase.
+          customizations to the template. I am using React, tailwindCSS, and
+          Firebase for the back end.
         </p>
         <p>
           {" "}
@@ -86,11 +90,7 @@ export default function ResumePage() {
               className="py-8 px-4"
               distance={100}
             >
-              <img
-                className="mx-auto"
-                src="/images/diploma.jpg"
-                alt="diploma"
-              />
+              <img className="mx-auto" src={diploma} alt="diploma" />
             </FadeInAnimation>
           )}
         </div>
@@ -120,8 +120,8 @@ export default function ResumePage() {
           <p>
             This course covers using React and TypeScript to build a complex
             application. The project uses other tools such as Commander and
-            ESbuild to an interactive web-based coding environment much like
-            CodePen. (29.5 hours of lectures)
+            ESbuild to build an interactive web-based coding environment much
+            like CodePen. (29.5 hours of lectures)
           </p>
           <p className="pt-6">
             View Certificate{" "}

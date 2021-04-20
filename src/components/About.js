@@ -16,8 +16,8 @@ export default function About() {
         through additional courses, personal projects, and freelancing. I feel
         confident to say that I am getting pretty good! I find programming to be
         very rewarding. When I finally figure out a tough bug or successfully
-        implement a cool feature to a website I will often clap my hands and say
-        "wooo!" 👏.
+        implement a cool feature to a website I can feel my brain grow a little
+        larger 🧠.
       </p>
       <p className="lg:w-1/3 text-justify pt-4 mx-auto ">
         My background is unique among most other developers. Prior to 2019 I

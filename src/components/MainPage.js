@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import ParticleContainer from "./ParticleContainer";
 import SkillsList from "./SkillsList";
 import About from "./About";
+import avatar from "../images/avatar.png";
 
 export default function MainPage() {
   return (
@@ -11,11 +12,7 @@ export default function MainPage() {
       <ParticleContainer />
       <Name />
       <div className="text-gray-200 pt-20">
-        <img
-          className="h-36 m-auto cursor-pointer"
-          src="/images/avatar.png"
-          alt="avatar"
-        />
+        <img className="h-36 m-auto cursor-pointer" src={avatar} alt="avatar" />
         <h1 className="text-center text-2xl p-10">Welcome to my Portfolio.</h1>
         <p className="md:w-2/4 lg:w-1/4 px-4 m-auto text-justify">
           I am a full-stack web developer with a unique background in social
