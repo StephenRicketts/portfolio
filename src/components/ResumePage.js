@@ -28,11 +28,12 @@ export default function ResumePage() {
       <p className="text-xl">Full-stack web development | App development</p>
       <div className="pt-2 mb-24 mx-auto md:w-1/2 lg:w-1/3 text-justify space-y-4">
         <p>
-          I am currently working a 2 month contract for a small start-up called
-          SeonVision. This project entails building a website and hooking it up
-          to a React admin panel template and then doing the necessary
-          customizations to the template. I am using React, tailwindCSS, and
-          Firebase for the back end.
+          A recent contract was for a small start-up called SeonVision. The
+          contract involved coding a Figma mock-up to React for their website. I
+          was able to create a pixel-perfect version of their mock-up using
+          Tailwind CSS and React. I spent the remainder of the contract
+          debugging an MVP version of their mobile application, which was built
+          by other freelance developers using React Native and TypeScript.
         </p>
         <p>
           {" "}
