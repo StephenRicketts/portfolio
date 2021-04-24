@@ -58,8 +58,9 @@ export default function ResumePage() {
         </p>
         <p>
           I am a quick learner and I love picking up new skills so I am open to
-          learning any language or framework. Being a good Dev means constantly
-          learning, so I am currently working on courses in AWS and Next js.
+          learning any language or framework. Being a good developer means
+          constantly learning, so I am currently working on courses in AWS and
+          Next js.
         </p>
       </div>
       <h2 className="text-3xl pb-10  mx-auto  w-3/5 md:w-1/5 border-b-2 border-green-300">

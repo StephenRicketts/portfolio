@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
-import WGInfo from "./components/WGProject/WGInfo";
-import CDInfo from "./components/CDProject/CDinfo";
+import WGinfo from "./components/WGProject/WGInfo";
+import CDinfo from "./components/CDProject/CDinfo";
+import STinfo from "./components/STProject/STinfo";
 import ResumePage from "./components/ResumePage";
 import ScrollToTop from "./components/wrappers/ScrollToTop";
 
@@ -22,10 +23,13 @@ const App = () => {
               <MainPage />
             </Route>
             <Route exact path="/projects/wg">
-              <WGInfo />
+              <WGinfo />
             </Route>
             <Route exact path="/projects/cd">
-              <CDInfo />
+              <CDinfo />
+            </Route>
+            <Route exact path="/projects/st">
+              <STinfo />
             </Route>
             <Route exact path="/resume">
               <ResumePage />

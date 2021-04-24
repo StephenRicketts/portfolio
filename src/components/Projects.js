@@ -1,5 +1,6 @@
 import React from "react";
 import CDbutton from "./CDProject/CDbutton";
+import STbutton from "./STProject/STbutton";
 import WGbutton from "./WGProject/WGbutton";
 
 export default function Projects() {
@@ -11,7 +12,8 @@ export default function Projects() {
       >
         Recent Projects
       </h1>
-      <div>
+      <div className="flex items-center justify-center">
+        <STbutton />
         <WGbutton />
         <CDbutton />
       </div>
