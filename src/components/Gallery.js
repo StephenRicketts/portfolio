@@ -9,6 +9,33 @@ import WGwrite from "../images/WGwrite.png";
 import WGprofile from "../images/WGprofile.png";
 import CDshow from "../images/CDshow.png";
 import CDbulma from "../images/CDbulma.png";
+import STlanding from "../images/STlanding.png";
+import STapp from "../images/STapp.png";
+import STinvestors from "../images/STinvestors.png";
+import STcontact from "../images/STcontact.png";
+
+const STimages = [
+  {
+    original: STlanding,
+    description:
+      "This is the landing page, it contains a couple custom images that I created using photoshop and a carousel for customer reviews.",
+  },
+  {
+    original: STapp,
+    description:
+      "This page displays information about the mobile application this website was designed to promote. It contants an sticky image of an Iphone that displays different images as the user scrolls down the page.",
+  },
+  {
+    original: STinvestors,
+    description:
+      "This is page is designed as a contact page for potential investors/partners. It contains a slide show at the top which displays a series of photos.",
+  },
+  {
+    original: STcontact,
+    description:
+      "This is the general contact page, the drop down menu in the navbar can be seen in this image.",
+  },
+];
 
 const WGimages = [
   {
@@ -58,5 +85,9 @@ export default function Gallery(props) {
   if (props.project === "CD") {
     images = CDimages;
   }
+  if (props.project === "ST") {
+    images = STimages;
+  }
+
   return <ImageGallery showPlayButton={false} items={images} />;
 }
